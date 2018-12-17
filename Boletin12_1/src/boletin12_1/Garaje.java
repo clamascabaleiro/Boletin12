@@ -46,8 +46,7 @@ public class Garaje {
     public String toString() {
         return "Garaje{" + "numCoches=" + numCoches + ", coche=" + coche + '}';
     }
-
-    //Comprobación plazas que hay disponibles, depende del valor del static numCoches.
+    
     public void comprobacionPlazas() {
         if (numCoches >= 1) {
             entrada = new Date();
@@ -59,7 +58,7 @@ public class Garaje {
         }
     }
 
-    //Calcular precio, 1.5 euros por 3 horas, y luego por cada hora 0.20 más, en este caso una hora serían 1000ms, osea un segundo más o menos.
+   
     public void calcularPrecio() {
         salida = new Date();
         tiempo = (int) (salida.getTime() - entrada.getTime());
@@ -73,7 +72,6 @@ public class Garaje {
         pagar();
         visualizarFactura();
     }
-//Método para saber lo hemos pagado, y que nos indique si hemos introducido menos dinero, cuanto nos falta hasta que introduzcamos todo.
 
     public void pagar() {
         pagado = Double.parseDouble(JOptionPane.showInputDialog("Introduce la cantidad a pagar"));
@@ -91,7 +89,6 @@ public class Garaje {
             pagado = totalPagado;
         }
     }
-//Método para visualidar la factura final, dónde se muestran los siguientes datos:
 
     public String visualizarFactura() {
         JOptionPane.showMessageDialog(null, "FACTURA: "
