@@ -93,6 +93,7 @@ public class Garaje {
     public String visualizarFactura() {
         JOptionPane.showMessageDialog(null, "FACTURA: "
                 + "\nMATRICULA COCHE: " + coche.getMatricula()
+                + "\nMODELO COCHE " + coche.getMarca()
                 + "\nTIEMPO: " + tiempo / 1000 + " horas"
                 + "\nPRECIO: " + precio + " euros"
                 + "\nDINERO RECIBIDO: " + pagado + " euros"

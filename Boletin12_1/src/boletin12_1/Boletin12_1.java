@@ -8,9 +8,9 @@ public class Boletin12_1 {
 
     public static void main(String[] args) {
         Garaje vigo = new Garaje();
-        vigo.setCoche("AAA1213", "ford");
+        vigo.setCoche("AAA1213", "FORD");
         Garaje vigo2 = new Garaje();
-        vigo2.setCoche("AAA1213", "seat");
+        vigo2.setCoche("AAA1213", "SEAT");
         vigo.comprobacionPlazas();
         vigo2.comprobacionPlazas();
         vigo2.calcularPrecio();
