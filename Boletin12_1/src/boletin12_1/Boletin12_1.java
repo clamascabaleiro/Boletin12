@@ -11,8 +11,8 @@ public class Boletin12_1 {
         vigo.setCoche("AAA1213", "FORD");
         Garaje vigo2 = new Garaje();
         vigo2.setCoche("AAA1213", "SEAT");
-        vigo.comprobacionPlazas();
-        vigo2.comprobacionPlazas();
+        vigo.comprobarPlazas();
+        vigo2.comprobarPlazas();
         vigo2.calcularPrecio();
         vigo.calcularPrecio();
     }

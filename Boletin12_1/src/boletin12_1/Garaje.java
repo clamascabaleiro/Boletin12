@@ -47,7 +47,7 @@ public class Garaje {
         return "Garaje{" + "numCoches=" + numCoches + ", coche=" + coche + '}';
     }
     
-    public void comprobacionPlazas() {
+    public void comprobarPlazas() {
         if (numCoches >= 1) {
             entrada = new Date();
             entrada.getTime();
